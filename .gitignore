@@ -1,0 +1,10 @@
+app
+node_modules
+!src/node_modules
+.env
+data/
+public/imageCache
+!public/imageCache/README.md
+*.pem
+npm-debug.log
+.DS_Store

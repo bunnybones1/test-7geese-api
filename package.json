@@ -1,0 +1,44 @@
+{
+  "name": "test-7geese-api",
+  "version": "1.0.0",
+  "description": "A test of the 7geese api",
+  "main": "index.js",
+  "scripts": {
+    "server": "concurrently --kill-others \"npm run db\" \"npm run express\"",
+    "client": "budo src/client/index.js:bundle.js -d app --ssl --live",
+    "express": "node src/index.js",
+    "db": "mongod --dbpath data/db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunnybones1/test-7geese-api.git"
+  },
+  "keywords": [
+    "7geese",
+    "api"
+  ],
+  "author": "Tomasz Dysinski <oz@bunnybones.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunnybones1/test-7geese-api/issues"
+  },
+  "homepage": "https://github.com/bunnybones1/test-7geese-api#readme",
+  "devDependencies": {
+    "budo": "^9.4.7",
+    "concurrently": "^3.1.0"
+  },
+  "dependencies": {
+    "client-sessions": "^0.7.0",
+    "dotenv": "^4.0.0",
+    "easyimage": "^2.1.0",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-sslify": "^1.2.0",
+    "https": "^1.0.0",
+    "md5": "^2.2.1",
+    "mongoose": "^4.8.1",
+    "request": "^2.79.0",
+    "skybiometry": "^1.2.1",
+    "xhr": "^2.3.3"
+  }
+}
