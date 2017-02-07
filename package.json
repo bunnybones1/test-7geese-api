@@ -1,7 +1,7 @@
 {
   "name": "test-7geese-api",
   "version": "1.0.0",
-  "description": "A test of the 7geese api",
+  "description": "A mashup of the 7geese api with other cool things",
   "main": "index.js",
   "scripts": {
     "server": "concurrently --kill-others \"npm run db\" \"npm run express\"",
